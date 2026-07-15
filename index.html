@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jardinería Orgánica | Cuidamos hoy para un mejor mañana</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                light: "#f4fbf7",
+                primary: "#1e4620",
+                secondary: "#2e6f40",
+                dark: "#0f2411",
+                accent: "#82b442",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-brand-light text-slate-800 font-sans antialiased">
+    <!-- HEADER & NAVIGATION -->
+    <header
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-emerald-100/50"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
+      >
+        <a href="#" class="flex items-center space-x-3">
+          <!-- Se puede reemplazar por 'Compacta1.png' o 'icono1.png' -->
+          <div
+            class="w-12 h-12 rounded-full overflow-hidden shadow-md shadow-emerald-900/20 border border-emerald-100 flex items-center justify-center bg-white"
+          >
+            <img
+              src="/assets/icons/icono1.png"
+              alt="Jardinería Orgánica Logo"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="flex flex-col">
+            <span
+              class="font-extrabold text-brand-dark tracking-wide text-lg leading-tight"
+              >JARDINERÍA</span
+            >
+            <span
+              class="font-bold text-brand-accent tracking-widest text-xs leading-none"
+              >ORGÁNICA</span
+            >
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-8 items-center">
+          <a
+            href="#quienes-somos"
+            class="text-sm font-semibold text-brand-dark hover:text-brand-secondary transition"
+            >Quiénes Somos</a
+          >
+          <a
+            href="#servicios"
+            class="text-sm font-semibold text-brand-dark hover:text-brand-secondary transition"
+            >Servicios</a
+          >
+          <a
+            href="#beneficios"
+            class="text-sm font-semibold text-brand-dark hover:text-brand-secondary transition"
+            >Beneficios</a
+          >
+          <a
+            href="#experiencia"
+            class="text-sm font-semibold text-brand-dark hover:text-brand-secondary transition"
+            >Proyectos</a
+          >
+          <a
+            href="#contacto"
+            class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-white bg-brand-primary hover:bg-brand-secondary rounded-full shadow-md shadow-emerald-900/10 transition duration-300 transform hover:-translate-y-0.5"
+          >
+            Diagnóstico Gratis
+          </a>
+        </nav>
+
+        <!-- Mobile Action Button -->
+        <div class="md:hidden">
+          <a
+            href="https://wa.me/573173310128"
+            target="_blank"
+            class="p-2.5 bg-emerald-500 text-white rounded-full flex items-center justify-center shadow-lg"
+          >
+            <i class="fab fa-whatsapp text-xl"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section
+      class="relative bg-gradient-to-br from-brand-primary to-brand-dark py-20 md:py-32 overflow-hidden text-white"
+    >
+      <div
+        class="absolute inset-0 opacity-10 bg-[radial-gradient(#82b442_1px,transparent_1px)] [background-size:16px_16px]"
+      ></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <span
+              class="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-bold bg-brand-accent/20 text-brand-accent border border-brand-accent/30 tracking-wider uppercase"
+            >
+              Cuidamos hoy para un mejor mañana
+            </span>
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight"
+            >
+              Mantenimiento Orgánico <br />
+              <span class="text-brand-accent">de Jardines y Árboles</span>
+            </h1>
+            <p
+              class="text-base sm:text-lg text-emerald-100/90 max-w-xl mx-auto lg:mx-0"
+            >
+              Soluciones ecológicas profesionales diseñadas para transformar y
+              optimizar zonas verdes residenciales, empresariales e
+              institucionales en el Valle del Cauca.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4"
+            >
+              <a
+                href="#contacto"
+                class="px-8 py-4 bg-brand-accent hover:bg-emerald-500 text-brand-dark font-extrabold rounded-xl shadow-lg shadow-emerald-950/50 transition duration-300 text-center transform hover:scale-[1.02]"
+              >
+                <i class="fa-regular fa-calendar-check mr-2"></i>Agenda
+                Diagnóstico Gratis
+              </a>
+              <a
+                href="https://wa.me/573173310128"
+                target="_blank"
+                class="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold rounded-xl transition duration-300 text-center flex items-center justify-center gap-2"
+              >
+                <i class="fab fa-whatsapp text-lg"></i> Háblanos por WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-md">
+              <div
+                class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-brand-accent to-emerald-500 opacity-30 blur-lg"
+              ></div>
+              <!-- Banner Principal -->
+              <div
+                class="relative bg-white/10 border border-white/10 rounded-2xl p-6 backdrop-blur-sm text-center space-y-4"
+              >
+                <div class="text-brand-accent text-5xl mb-2">
+                  <i class="fa-solid fa-seedling"></i>
+                </div>
+                <h3 class="text-xl font-bold">100% Sostenible y Profesional</h3>
+                <p class="text-sm text-emerald-100/80">
+                  Sin químicos agresivos. Cuidamos de tu salud, la de tus
+                  mascotas y la del medio ambiente utilizando biotecnología
+                  avanzada.
+                </p>
+                <div
+                  class="border-t border-white/10 pt-4 grid grid-cols-2 gap-4 text-left text-xs text-emerald-100"
+                >
+                  <div>
+                    <i
+                      class="fa-solid fa-circle-check text-brand-accent mr-1"
+                    ></i>
+                    Métodos Orgánicos
+                  </div>
+                  <div>
+                    <i
+                      class="fa-solid fa-circle-check text-brand-accent mr-1"
+                    ></i>
+                    Árboles Saludables
+                  </div>
+                  <div>
+                    <i
+                      class="fa-solid fa-circle-check text-brand-accent mr-1"
+                    ></i>
+                    Ciudades más Verdes
+                  </div>
+                  <div>
+                    <i
+                      class="fa-solid fa-circle-check text-brand-accent mr-1"
+                    ></i>
+                    Sin contaminantes
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section id="quienes-somos" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <h2
+            class="text-xs font-bold text-brand-accent tracking-widest uppercase"
+          >
+            Quiénes Somos
+          </h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-brand-dark">
+            Soluciones Ecológicas Para Zonas Verdes Urbanas
+          </p>
+          <div class="h-1 w-20 bg-brand-accent mx-auto rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <p class="text-lg text-slate-600 leading-relaxed">
+              Somos una empresa especializada en el diseño, mantenimiento y
+              recuperación ambiental de espacios residenciales, empresariales e
+              institucionales[cite: 2].
+            </p>
+            <p class="text-lg text-slate-600 leading-relaxed">
+              Nuestro enfoque combina rigurosa experiencia técnica,
+              sostenibilidad y prácticas responsables mediante el uso de
+              bioinsumos y tecnologías amigables con el medio ambiente.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4">
+              <div
+                class="p-4 bg-brand-light rounded-xl border border-emerald-100"
+              >
+                <h4 class="font-extrabold text-brand-primary text-2xl">
+                  Misión
+                </h4>
+                <p class="text-xs text-slate-500 mt-1">
+                  Crear espacios saludables, estéticos y balanceados.
+                </p>
+              </div>
+              <div
+                class="p-4 bg-brand-light rounded-xl border border-emerald-100"
+              >
+                <h4 class="font-extrabold text-brand-primary text-2xl">
+                  Compromiso
+                </h4>
+                <p class="text-xs text-slate-500 mt-1">
+                  Sostenibilidad real y soporte técnico especializado.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- INSERCIÓN DE LA IMAGEN PORTADA -->
+          <div
+            class="relative group overflow-hidden rounded-2xl shadow-xl shadow-emerald-950/10 border border-emerald-100"
+          >
+            <img
+              src="/assets/services/ArbolesSiembra1.png"
+              alt="Equipo de trabajo de Jardinería Orgánica en campo"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent"
+            ></div>
+          </div>
+          <div
+            class="bg-brand-light border border-emerald-100 rounded-2xl p-8 space-y-6"
+          >
+            <h3 class="text-xl font-bold text-brand-dark">
+              Nuestra Dirección Técnica
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-brand-primary shrink-0"
+                >
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900">
+                    Ing. Agrónomo Adolfo Perlaza
+                  </h4>
+                  <p class="text-sm text-slate-500">
+                    Dirección y Asistencia Técnica Agronómica
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-brand-primary shrink-0"
+                >
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900">
+                    Juan David Santamaría
+                  </h4>
+                  <p class="text-sm text-slate-500">
+                    Ingeniería de Logística y Procesos Tecnológicos
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS ESPECIALIZADOS -->
+    <section id="servicios" class="py-20 bg-brand-light">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <h2
+            class="text-xs font-bold text-brand-accent tracking-widest uppercase"
+          >
+            Portafolio
+          </h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-brand-dark">
+            Servicios Especializados
+          </p>
+          <div class="h-1 w-20 bg-brand-accent mx-auto rounded-full"></div>
+        </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <!-- Servicio 1: Mantenimiento (Con Imagen jardines2.jpg) -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 border border-slate-100 flex flex-col justify-between overflow-hidden">
+    <div>
+      <!-- Imagen de cabecera para la tarjeta -->
+      <div class="w-full h-48  overflow-hidden">
+        <img src="/assets/services/jardines2.png" alt="Mantenimiento de zonas verdes" class="w-full h-full object-cover">
+      </div>
+      <div class="w-12 h-12 bg-emerald-50 text-brand-secondary rounded-xl flex items-center justify-center text-xl mb-6">
+        <i class="fa-solid fa-scissors"></i>
+      </div>
+      <h3 class="text-lg font-bold text-brand-dark mb-2">
+        Mantenimiento Integral de Zonas Verdes
+      </h3>
+      <p class="text-sm text-slate-500 mb-4">
+        Conservación profesional orientada a mantener espacios verdes saludables y visualmente atractivos.
+      </p>
+      <ul class="text-xs space-y-2 text-slate-600 mb-6">
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Corte y mantenimiento de césped.</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Limpieza y recuperación de jardines.</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Fertilización orgánica.</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Manejo preventivo de malezas.</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Optimización estética de zonas verdes.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Servicio 2: Diseño Ecológico (Sin imagen para balancear o podés usar otra si querés) -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 border border-slate-100 flex flex-col justify-between">
+    <div>
+      <div class="w-12 h-12 bg-emerald-50 text-brand-secondary rounded-xl flex items-center justify-center text-xl mb-6">
+        <i class="fa-solid fa-compass"></i>
+      </div>
+      <h3 class="text-lg font-bold text-brand-dark mb-2">
+        Diseño Ecológico y Paisajismo Urbano
+      </h3>
+      <p class="text-sm text-slate-500 mb-4">
+        Jardines modernos y sostenibles para conjuntos residenciales, empresas y espacios privados.
+      </p>
+      <ul class="text-xs space-y-2 text-slate-600 mb-6">
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Diseño paisajístico y recuperación</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Jardinería ornamental</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Plantas autóctonas de bajo consumo hídrico</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Proyectos ecológicos urbanos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Servicio 3: Control Orgánico (Con Imagen Bioinsumos2.jpg) -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 border border-slate-100 flex flex-col justify-between overflow-hidden">
+    <div>
+      <!-- Imagen de cabecera para la tarjeta -->
+      <div class="w-full h-48  overflow-hidden">
+        <img src="/assets/services/Bioinsumos2.png" alt="Control orgánico de plagas" class="w-full h-full object-cover">
+      </div>
+      <div class="w-12 h-12 bg-emerald-50 text-brand-secondary rounded-xl flex items-center justify-center text-xl mb-6">
+        <i class="fa-solid fa-shield-virus"></i>
+      </div>
+      <h3 class="text-lg font-bold text-brand-dark mb-2">
+        Control Orgánico de Plagas
+      </h3>
+      <p class="text-sm text-slate-500 mb-4">
+        Aplicamos soluciones ecológicas urbanas altamente eficaces y seguras para personas y mascotas.
+      </p>
+      <ul class="text-xs space-y-2 text-slate-600 mb-6">
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Fumigación ecológica certificada</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Aplicación técnica de bioinsecticidas</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Manejo integrado de plagas urbanas</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Protección ambiental y sanitaria</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Servicio 4: Poda y Manejo Técnico (Con Imagen ArbolesSiembra1.jpg) -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 border border-slate-100 flex flex-col justify-between overflow-hidden">
+    <div>
+      <!-- Imagen de cabecera para la tarjeta -->
+      <div class="w-full h-48  overflow-hidden">
+        <img src="/assets/services/ArbolesSiembra1.png" alt="Manejo técnico de árboles" class="w-full h-full object-cover">
+      </div>
+      <div class="w-12 h-12 bg-emerald-50 text-brand-secondary rounded-xl flex items-center justify-center text-xl mb-6">
+        <i class="fa-solid fa-tree"></i>
+      </div>
+      <h3 class="text-lg font-bold text-brand-dark mb-2">
+        Poda y Manejo Técnico de Árboles
+      </h3>
+      <p class="text-sm text-slate-500 mb-4">
+        Conservación, manejo seguro y mantenimiento técnico especializado de árboles urbanos.
+      </p>
+      <ul class="text-xs space-y-2 text-slate-600 mb-6">
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Poda preventiva y correctiva</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Manejo técnico de especies arborizadas</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Conservación de árboles históricos</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Seguridad operativa en zonas verdes</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Servicio 5: Sistemas de Riego -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 border border-slate-100 flex flex-col justify-between">
+    <div>
+      <div class="w-12 h-12 bg-emerald-50 text-brand-secondary rounded-xl flex items-center justify-center text-xl mb-6">
+        <i class="fa-solid fa-droplet"></i>
+      </div>
+      <h3 class="text-lg font-bold text-brand-dark mb-2">
+        Instalación de Sistemas de Riego
+      </h3>
+      <p class="text-sm text-slate-500 mb-4">
+        Diseño e implementación de sistemas eficientes para optimizar el consumo de agua en jardines.
+      </p>
+      <ul class="text-xs space-y-2 text-slate-600 mb-6">
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Sistemas de riego automatizados y goteo</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Optimización del recurso hídrico</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Mantenimiento de tuberías y aspersores</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Servicio 6: Suministro de Bioinsumos -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 border border-slate-100 flex flex-col justify-between">
+    <div>
+      <div class="w-12 h-12 bg-emerald-50 text-brand-secondary rounded-xl flex items-center justify-center text-xl mb-6">
+        <i class="fa-solid fa-box-open"></i>
+      </div>
+      <h3 class="text-lg font-bold text-brand-dark mb-2">
+        Suministro de Bioinsumos
+      </h3>
+      <p class="text-sm text-slate-500 mb-4">
+        Distribución autorizada de productos ecológicos para el fortalecimiento natural de zonas verdes.
+      </p>
+      <ul class="text-xs space-y-2 text-slate-600 mb-6">
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Biofertilizantes de alta calidad</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Bioinsecticidas selectivos</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Enmiendas orgánicas para suelos</li>
+        <li><i class="fa-solid fa-check text-brand-accent mr-2"></i>Trampas ecológicas de monitoreo</li>
+      </ul>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <!-- EDUCACIÓN SEMIPROFESIONAL -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="bg-gradient-to-br from-brand-primary to-brand-dark rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden"
+        >
+          <div
+            class="absolute right-0 top-0 translate-x-12 -translate-y-12 w-64 h-64 bg-brand-accent/10 rounded-full blur-2xl"
+          ></div>
+
+          <div class="relative z-10 text-center space-y-6">
+            <span
+              class="px-3.5 py-1.5 rounded-full text-xs font-bold bg-brand-accent text-brand-dark"
+              >Programa de Formación</span
+            >
+            <h3 class="text-2xl sm:text-3xl font-extrabold">
+              Programa de Educación de Jardinería Semiprofesional
+            </h3>
+            <p
+              class="text-sm sm:text-base text-emerald-100/90 max-w-xl mx-auto"
+            >
+              Capacitamos a tu personal o a ti en las mejores prácticas
+              agronómicas y ecológicas del sector.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 text-left">
+              <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+                <span class="text-brand-accent font-bold text-xs"
+                  >Módulo 1</span
+                >
+                <h4 class="font-bold text-sm mt-1">Suelo, Agua & Planta</h4>
+              </div>
+              <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+                <span class="text-brand-accent font-bold text-xs"
+                  >Módulo 2</span
+                >
+                <h4 class="font-bold text-sm mt-1">Identificación de Plagas</h4>
+              </div>
+              <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+                <span class="text-brand-accent font-bold text-xs"
+                  >Módulo 3</span
+                >
+                <h4 class="font-bold text-sm mt-1">Manejo Fitosanitario</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section id="beneficios" class="py-20 bg-brand-light">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <h2
+              class="text-xs font-bold text-brand-accent tracking-widest uppercase"
+            >
+              Valor Agregado
+            </h2>
+            <p class="text-3xl sm:text-4xl font-extrabold text-brand-dark">
+              Beneficios Para Nuestros Clientes
+            </p>
+            <p class="text-slate-600">
+              Nuestra metodología de intervención orgánica no solo embellece tus
+              espacios, sino que genera ventajas competitivas reales y
+              cuantificables en costes y sostenibilidad.
+            </p>
+            <div class="space-y-4 pt-2">
+              <div class="flex items-start space-x-3">
+                <div
+                  class="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center text-brand-secondary mt-1 shrink-0"
+                >
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <p class="text-sm font-semibold text-slate-700">
+                  Reducción de costos de mantenimiento preventivo.
+                </p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center text-brand-secondary mt-1 shrink-0"
+                >
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <p class="text-sm font-semibold text-slate-700">
+                  Espacios verdes más saludables y equilibrados.
+                </p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center text-brand-secondary mt-1 shrink-0"
+                >
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <p class="text-sm font-semibold text-slate-700">
+                  Control ecológico eficaz contra plagas y enfermedades urbanas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-3xl p-8 border border-emerald-100/50 shadow-sm space-y-6"
+          >
+            <h3
+              class="text-xl font-extrabold text-brand-dark border-b border-slate-100 pb-4"
+            >
+              Nuestro Proceso Técnico
+            </h3>
+            <div class="space-y-6">
+              <div class="flex space-x-4">
+                <span class="text-brand-accent font-extrabold text-lg">01</span>
+                <div>
+                  <h4 class="font-bold text-slate-900">
+                    Diagnóstico Técnico Inicial
+                  </h4>
+                  <p class="text-xs text-slate-500 mt-1">
+                    Análisis de salud foliar, vigor de árboles e inspección del
+                    suelo.
+                  </p>
+                </div>
+              </div>
+              <div class="flex space-x-4">
+                <span class="text-brand-accent font-extrabold text-lg">02</span>
+                <div>
+                  <h4 class="font-bold text-slate-900">
+                    Evaluación del Entorno
+                  </h4>
+                  <p class="text-xs text-slate-500 mt-1">
+                    Revisión de horas de luz, microclima de Jamundí y
+                    condiciones de humedad.
+                  </p>
+                </div>
+              </div>
+              <div class="flex space-x-4">
+                <span class="text-brand-accent font-extrabold text-lg">03</span>
+                <div>
+                  <h4 class="font-bold text-slate-900">
+                    Propuesta Adaptada e Intervención
+                  </h4>
+                  <p class="text-xs text-slate-500 mt-1">
+                    Cronograma estructurado con uso exclusivo de bioinsumos de
+                    alta calidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA & PROYECTOS -->
+    <section id="experiencia" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <h2
+            class="text-xs font-bold text-brand-accent tracking-widest uppercase"
+          >
+            Trayectoria
+          </h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-brand-dark">
+            Experiencia y Proyectos Destacados
+          </p>
+          <div class="h-1 w-20 bg-brand-accent mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Proyecto 1 -->
+          <div
+            class="p-6 rounded-2xl bg-brand-light border border-emerald-100 flex flex-col justify-between"
+          >
+            <div>
+              <h4 class="font-extrabold text-brand-primary text-lg">
+                EPSA - CELSIA
+              </h4>
+              <p class="text-sm text-slate-600 mt-2">
+                Construcción y diseño de cancha de fútbol junto con adecuación
+                fitosanitaria de zonas verdes.
+              </p>
+            </div>
+            <span
+              class="text-xs text-brand-accent font-bold mt-4 tracking-wider uppercase"
+              >Infraestructura Corporativa</span
+            >
+          </div>
+          <!-- Proyecto 2 -->
+          <div
+            class="p-6 rounded-2xl bg-brand-light border border-emerald-100 flex flex-col justify-between"
+          >
+            <div>
+              <h4 class="font-extrabold text-brand-primary text-lg">FES</h4>
+              <p class="text-sm text-slate-600 mt-2">
+                Conservación, estabilización biológica y manejo técnico
+                especializado de árboles históricos.
+              </p>
+            </div>
+            <span
+              class="text-xs text-brand-accent font-bold mt-4 tracking-wider uppercase"
+              >Patrimonio Ambiental</span
+            >
+          </div>
+          <!-- Proyecto 3 -->
+          <div
+            class="p-6 rounded-2xl bg-brand-light border border-emerald-100 flex flex-col justify-between"
+          >
+            <div>
+              <h4 class="font-extrabold text-brand-primary text-lg">
+                MESAGRO S.A.S.
+              </h4>
+              <p class="text-sm text-slate-600 mt-2">
+                Asistencia técnica e implementación comercial avanzada en
+                formulación de bioinsumos orgánicos.
+              </p>
+            </div>
+            <span
+              class="text-xs text-brand-accent font-bold mt-4 tracking-wider uppercase"
+              >Investigación y Desarrollo</span
+            >
+          </div>
+          <!-- Proyecto 4 -->
+          <div
+            class="p-6 rounded-2xl bg-brand-light border border-emerald-100 flex flex-col justify-between"
+          >
+            <div>
+              <h4 class="font-extrabold text-brand-primary text-lg">
+                ASOCAÑA - López Adentro
+              </h4>
+              <p class="text-sm text-slate-600 mt-2">
+                Asistencia técnica de alta precisión en procesos agrosostenibles
+                de arroz orgánico.
+              </p>
+            </div>
+            <span
+              class="text-xs text-brand-accent font-bold mt-4 tracking-wider uppercase"
+              >Sector Agroindustrial</span
+            >
+          </div>
+          <!-- Proyecto 5 -->
+          <div
+            class="p-6 rounded-2xl bg-brand-light border border-emerald-100 flex flex-col justify-between"
+          >
+            <div>
+              <h4 class="font-extrabold text-brand-primary text-lg">
+                Proyecto Ambiental "Vuelve al Río"
+              </h4>
+              <p class="text-sm text-slate-600 mt-2">
+                Participación y co-diseño en iniciativas de recuperación del
+                cauce y reforestación de riberas.
+              </p>
+            </div>
+            <span
+              class="text-xs text-brand-accent font-bold mt-4 tracking-wider uppercase"
+              >Conservación de Ecosistemas</span
+            >
+          </div>
+          <!-- Proyecto 6 -->
+          <div
+            class="p-6 rounded-2xl bg-brand-light border border-emerald-100 flex flex-col justify-between"
+          >
+            <div>
+              <h4 class="font-extrabold text-brand-primary text-lg">
+                Unidades Residenciales
+              </h4>
+              <p class="text-sm text-slate-600 mt-2">
+                Planes recurrentes de control orgánico integrado de plagas y
+                mantenimiento estético de zonas comunes.
+              </p>
+            </div>
+            <span
+              class="text-xs text-brand-accent font-bold mt-4 tracking-wider uppercase"
+              >Propiedad Horizontal</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO & COBERTURA -->
+    <section id="contacto" class="py-20 bg-brand-dark text-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div class="lg:col-span-5 space-y-6">
+            <span
+              class="text-xs font-bold text-brand-accent tracking-widest uppercase"
+              >Área de Operaciones</span
+            >
+            <h2 class="text-3xl sm:text-4xl font-extrabold">
+              ¿Dónde Trabajamos?
+            </h2>
+            <p class="text-emerald-100/80">
+              Nuestra base logística y operativa está enfocada principalmente en
+              el departamento del Valle del Cauca y zonas del norte del Cauca.
+            </p>
+            <div class="space-y-3 text-sm text-emerald-100/90">
+              <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-location-dot text-brand-accent"></i>
+                <span>Jamundí - Cali</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-location-dot text-brand-accent"></i>
+                <span>Valle del Cauca</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-location-dot text-brand-accent"></i>
+                <span>Cauca</span>
+              </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-6 space-y-4">
+              <h4 class="font-bold text-white">Canales de Atención Directa</h4>
+              <div class="text-xs text-emerald-100/80 space-y-2">
+                <p>
+                  <i class="fa-solid fa-envelope text-brand-accent mr-2"></i
+                  >ap.jardineriaorganica@gmail.com
+                </p>
+                <p>
+                  <i class="fa-solid fa-phone text-brand-accent mr-2"></i>+57
+                  318 5766597 (Ing. Adolfo Perlaza)
+                </p>
+                <p>
+                  <i class="fa-solid fa-phone text-brand-accent mr-2"></i>+57
+                  312 6899494 (Ing. Juan David Santamaría)
+                </p>
+                <p>
+                  <i class="fab fa-whatsapp text-brand-accent mr-2"></i>+57 317
+                  3310128 (WhatsApp Comercial)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="lg:col-span-7 bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm"
+          >
+            <h3 class="text-2xl font-bold text-brand-accent mb-2">
+              Solicita tu Diagnóstico Gratis
+            </h3>
+            <p class="text-sm text-emerald-100/70 mb-6">
+              Completa tus datos para agendar una visita técnica sin costo
+              alguno por parte de nuestro ingeniero agrónomo.
+            </p>
+
+            <form action="#" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    class="block text-xs text-emerald-100/80 font-bold mb-1"
+                    >Nombre Completo</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Ej. Juan Pérez"
+                    class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block text-xs text-emerald-100/80 font-bold mb-1"
+                    >Teléfono o WhatsApp</label
+                  >
+                  <input
+                    type="tel"
+                    placeholder="Ej. 3173310128"
+                    class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs text-emerald-100/80 font-bold mb-1"
+                  >Ubicación / Municipio</label
+                >
+                <input
+                  type="text"
+                  placeholder="Ej. Jamundí"
+                  class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent"
+                />
+              </div>
+              <div>
+                <label class="block text-xs text-emerald-100/80 font-bold mb-1"
+                  >¿Qué tipo de espacio verde tienes?</label
+                >
+                <select
+                  class="w-full bg-slate-800 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent"
+                >
+                  <option value="residencial">Jardín Residencial</option>
+                  <option value="empresarial">Zonas Verdes Corporativas</option>
+                  <option value="arboles">Poda de Árboles Específicos</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <button
+                type="submit"
+                class="w-full py-4 bg-brand-accent hover:bg-emerald-500 text-brand-dark font-extrabold rounded-xl transition duration-300"
+              >
+                Enviar Solicitud
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-brand-dark border-t border-white/5 py-8 text-xs text-emerald-100/60"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+      >
+        <p>&copy; 2026 Jardinería Orgánica. Todos los derechos reservados.</p>
+        <p>
+          Soporte Tecnológico & Optimización por Ing. Juan David Santamaría.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
