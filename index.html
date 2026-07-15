@@ -807,61 +807,76 @@
               alguno por parte de nuestro ingeniero agrónomo.
             </p>
 
-            <form action="#" class="space-y-4">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label
-                    class="block text-xs text-emerald-100/80 font-bold mb-1"
-                    >Nombre Completo</label
-                  >
-                  <input
-                    type="text"
-                    placeholder="Ej. Juan Pérez"
-                    class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent"
-                  />
-                </div>
-                <div>
-                  <label
-                    class="block text-xs text-emerald-100/80 font-bold mb-1"
-                    >Teléfono o WhatsApp</label
-                  >
-                  <input
-                    type="tel"
-                    placeholder="Ej. 3173310128"
-                    class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent"
-                  />
-                </div>
-              </div>
-              <div>
-                <label class="block text-xs text-emerald-100/80 font-bold mb-1"
-                  >Ubicación / Municipio</label
-                >
-                <input
-                  type="text"
-                  placeholder="Ej. Jamundí"
-                  class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent"
-                />
-              </div>
-              <div>
-                <label class="block text-xs text-emerald-100/80 font-bold mb-1"
-                  >¿Qué tipo de espacio verde tienes?</label
-                >
-                <select
-                  class="w-full bg-slate-800 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent"
-                >
-                  <option value="residencial">Jardín Residencial</option>
-                  <option value="empresarial">Zonas Verdes Corporativas</option>
-                  <option value="arboles">Poda de Árboles Específicos</option>
-                  <option value="otro">Otro</option>
-                </select>
-              </div>
-              <button
-                type="submit"
-                class="w-full py-4 bg-brand-accent hover:bg-emerald-500 text-brand-dark font-extrabold rounded-xl transition duration-300"
-              >
-                Enviar Solicitud
-              </button>
-            </form>
+<form 
+  name="contacto-jardineria" 
+  method="POST" 
+  data-netlify="true" 
+  class="space-y-4"
+>
+  <input type="hidden" name="form-name" value="contacto-jardineria" />
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div>
+      <label class="block text-xs text-emerald-100/80 font-bold mb-1">
+        Nombre Completo
+      </label>
+      <input
+        type="text"
+        name="nombre"
+        required
+        placeholder="Ej. Juan Pérez"
+        class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent"
+      />
+    </div>
+    <div>
+      <label class="block text-xs text-emerald-100/80 font-bold mb-1">
+        Teléfono o WhatsApp
+      </label>
+      <input
+        type="tel"
+        name="telefono"
+        required
+        placeholder="Ej. 3173310128"
+        class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent"
+      />
+    </div>
+  </div>
+
+  <div>
+    <label class="block text-xs text-emerald-100/80 font-bold mb-1">
+      Ubicación / Municipio
+    </label>
+    <input
+      type="text"
+      name="ubicacion"
+      required
+      placeholder="Ej. Jamundí"
+      class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent"
+    />
+  </div>
+
+  <div>
+    <label class="block text-xs text-emerald-100/80 font-bold mb-1">
+      ¿Qué tipo de espacio verde tienes?
+    </label>
+    <select
+      name="tipo_espacio"
+      class="w-full bg-slate-800 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent"
+    >
+      <option value="residencial">Jardín Residencial</option>
+      <option value="empresarial">Zonas Verdes Corporativas</option>
+      <option value="arboles">Poda de Árboles Específicos</option>
+      <option value="otro">Otro</option>
+    </select>
+  </div>
+
+  <button
+    type="submit"
+    class="w-full py-4 bg-brand-accent hover:bg-emerald-500 text-brand-dark font-extrabold rounded-xl transition duration-300"
+  >
+    Enviar Solicitud
+  </button>
+</form>
           </div>
         </div>
       </div>
